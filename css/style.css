@@ -4,6 +4,7 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -13,9 +14,10 @@ body {
 
 .sidebar {
     width: 25%;
-    background: #f4f4f4;
+    background: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #ddd;
 }
 
 .profile img {
@@ -23,15 +25,16 @@ body {
     height: 200px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .profile h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 10px 0 5px;
     font-weight: bold;
+    color: #333;
 }
 
 .profile p {
@@ -53,6 +56,14 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #f0f0f0;
 }
 
 footer {
@@ -65,50 +76,96 @@ footer {
 footer a {
     color: #333;
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 0 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+footer .social a:hover {
+    transform: scale(1.2);
 }
 
 footer .cp {
-    margin-top: 50%;
+    margin-top: 20px;
 }
-
-
-
 
 .main-content {
     width: 75%;
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    text-align: left;
+    border-left: 1px solid #ddd;
+}
+
+.home h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: right;
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
     text-align: justify;
 }
 
-.main-content .home h1 {
+.news {
+    margin-top: 30px;
+}
+
+.news h1 {
+    font-size: 2em;
+    color: #333;
     margin-bottom: 20px;
-    background-color: gainsboro;
-    text-align: right;
-    font-size: 5cap;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+
+.news-content .newskiri {
+    /* background-color: #e3521e; */
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
     font-weight: bold;
     
 }
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
+
+.news-content .newskanan {
+    
+    padding: 10px;
+    border-radius: 5px;
+
+    flex: 4;
+}
+
+.news-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news-content li {
+    margin-bottom: 10px;
     font-size: 1em;
-    border: none;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
+    color: #333;
 }
 
-button:hover {
-    background: #555;
-}
-
-/* Responsive styles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -116,7 +173,7 @@ button:hover {
 
     .sidebar {
         width: 100%;
-        height: 400px;
+        height: auto;
         box-shadow: none;
         text-align: center;
     }
@@ -125,19 +182,31 @@ button:hover {
         width: 100%;
         padding: 20px;
     }
+
+    .news-content {
+        flex-direction: column;
+    }
+
+    .news-content div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    .intro h1 {
+    .home h1 {
         font-size: 2em;
     }
 
-    .intro p {
+    .home p {
         font-size: 1em;
     }
 
-    button {
-        padding: 8px 16px;
+    .news h1 {
+        font-size: 1.5em;
+    }
+
+    .news-content li {
         font-size: 0.9em;
     }
 }
