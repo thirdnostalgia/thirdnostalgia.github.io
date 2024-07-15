@@ -1,3 +1,7 @@
+*, html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,7 +19,7 @@ body {
 .sidebar {
     width: 25%;
     height: 100%;
-    background: #ffffff;
+    background: rgba(225, 234, 236, 0.695);
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     border-right: 1px solid #ddd;
@@ -164,6 +168,9 @@ footer .cp {
     transition: transform 0.3s;
 }
 
+
+
+
 .galeri img:hover {
     transform: scale(1.05);
 }
@@ -172,6 +179,7 @@ footer .cp {
     text-align: center;
     margin-top: 10px;
     color: #333; 
+    transition: transform 0.3s;
 }
 
 .galeri p:hover {
