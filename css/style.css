@@ -20,6 +20,7 @@ body {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     border-right: 1px solid #ddd;
     position: fixed;
+    overflow-y: auto;
 }
 
 .profile img {
@@ -97,23 +98,17 @@ footer .cp {
 
 .main-content {
     margin-left: 27%;
-    width: 75%;
+    width: 73%;
     background: #ffffff;
     padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    border-left: 1px solid #ddd;
-    position: ;
+    overflow-y: auto;
 }
 
 .home h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
-    text-align: right;
+    text-align: left;
     font-weight: bold;
 }
 
@@ -139,23 +134,59 @@ footer .cp {
     display: flex;
     justify-content: space-between;
     width: 100%;
-  
+}
+
+.main-content .projects {
+    width: 100%;
+}
+
+.galeri {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.galeri img {
+    width: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.galeri img:hover {
+    transform: scale(1.05);
+}
+
+.galeri p {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.projects h1 {
+            text-align: center;
+            font-size: 1.8em;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+        
 }
 
 .news-content .newskiri {
-    /* background-color: #e3521e; */
     padding: 10px;
     border-radius: 5px;
     flex: 1;
     font-weight: bold;
-    
 }
 
 .news-content .newskanan {
-    
     padding: 10px;
     border-radius: 5px;
-
     flex: 4;
 }
 
@@ -171,46 +202,17 @@ footer .cp {
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
     .sidebar {
+        position: static;
         width: 100%;
-        height: auto;
-        box-shadow: none;
-        text-align: center;
     }
 
     .main-content {
+        margin-left: 0;
         width: 100%;
-        padding: 20px;
     }
 
-    .news-content {
+    .container {
         flex-direction: column;
-    }
-
-    .news-content div {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .home h1 {
-        font-size: 2em;
-    }
-
-    .home p {
-        font-size: 1em;
-    }
-
-    .news h1 {
-        font-size: 1.5em;
-    }
-
-    .news-content li {
-        font-size: 0.9em;
     }
 }
