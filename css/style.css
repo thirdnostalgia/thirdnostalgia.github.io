@@ -14,10 +14,12 @@ body {
 
 .sidebar {
     width: 25%;
+    height: 100%;
     background: #ffffff;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     border-right: 1px solid #ddd;
+    position: fixed;
 }
 
 .profile img {
@@ -25,7 +27,7 @@ body {
     height: 200px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -70,7 +72,7 @@ footer {
     font-size: 0.9em;
     color: #777;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 footer a {
@@ -94,6 +96,7 @@ footer .cp {
 }
 
 .main-content {
+    margin-left: 27%;
     width: 75%;
     background: #ffffff;
     padding: 40px;
@@ -103,6 +106,7 @@ footer .cp {
     align-items: center;
     text-align: left;
     border-left: 1px solid #ddd;
+    position: ;
 }
 
 .home h1 {
