@@ -222,6 +222,19 @@ footer .cp {
     color: #333;
 }
 
+.usv h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+
+}
+
+.usv p {
+    text-align: justify;
+    margin: 10px;
+}
+
+
 @media (max-width: 768px) {
     .sidebar {
         position: static;
