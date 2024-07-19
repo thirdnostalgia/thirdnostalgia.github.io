@@ -21,7 +21,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="index.html#education">Education</a></li>
                     <li><a href="index.html#experience">Experience</a></li>
                     <li><a href="index.html#projects">Projects</a></li>
                 </ul>
@@ -41,38 +41,32 @@
             </footer>
         </aside>
         <main class="main-content">
-           <div class="usv">
+            <div class="usv">
                 <h1>Unmanned Surfave Vehicle (USV) for Water Sampling</h1>
-                <p>Proyek ini melibatkan pengembangan dan implementasi dari sebuah Unmanned Surface Vehicle (USV) yang dilengkapi dengan
-                sistem pengambil sampel air. USV ini dirancang untuk melakukan navigasi otomatis di permukaan air dan mampu mengambil
-                sampel air dari berbagai kedalaman yang diinginkan. Beberapa fitur utama dari proyek ini meliputi:
-                </p>
-                <p>Desain 3D dan Struktur Mekanik: Menggunakan software Autodesk Inventor, USV didesain dengan bentuk katamaran untuk
-                memastikan stabilitas dan efisiensi. Sistem aktuator dan kemudi diletakkan di atas wahana, memungkinkan navigasi yang
-                lebih mudah dan responsif.
-                
-                </p>
-                <p>Sistem Water Sampler: Sistem pengambil sampel air dapat bekerja secara semi-terpisah dari USV, namun dikendalikan
-                melalui sinyal PWM dari sistem USV untuk menentukan kedalaman pengambilan air. Sistem ini dirancang untuk mengambil
-                sampel air dengan volume tertentu (220 ml per botol) guna memastikan akurasi dan kemudahan pengoperasian dalam berbagai
-                kondisi perairan.
-                </p>
-                <p>Perancangan Elektrikal dan Perangkat Lunak: Sistem kontrol menggunakan perangkat Pixhawk Autopilot dan software Arduino
-                IDE untuk mengendalikan operasi pengambilan sampel air. Diagram blok elektrikal dan diagram alir fungsi sampling dibuat
-                untuk memastikan seluruh sistem bekerja dengan sinkron.
-                
-                </p>
-                <p>Pengujian dan Evaluasi: Pengujian dilakukan untuk mengukur akurasi pergerakan USV, keefektifan sistem water sampler, dan
-                keakuratan data yang dikumpulkan. Pengujian mencakup navigasi otomatis menggunakan waypoints, serta pengambilan data
-                medan magnet dan satelit selama perjalanan.</p>
+                <p>This project was created as my bachelor's thesis. The goal of this USV is to sample water at a certain depth
+                automatically. This project is divided into 2 parts, namely USV and water sampler.</p>
 
-                <p>Proyek ini menunjukkan kemampuan integrasi antara sistem mekanik, elektrikal, dan perangkat lunak untuk menciptakan
-                sebuah wahana otonom yang efisien dalam pengambilan sampel air. Hasil pengujian menunjukkan kesalahan rata-rata sebesar
-                2,465 meter dengan nilai Root Mean Square Error (RMSE) sebesar 1,570 meter, mengindikasikan adanya ruang untuk perbaikan
-                dalam navigasi dan respons kontrol USV</p>
+                <div class="image-container">
+                    <img src="src/usv-.png" alt="USV Image">
+                    <img src="src/ws.png" alt="Water Sampler Image">
+                </div>
+
+                <p>The USV is a catamaran and uses PixHawk Pix32 for the main controller, GPS module for navigation, 1 Brushless DC Motor,
+                and 1 Servo motor as the actuator. The water sampler system can work semi-separately from the USV, this system is
+                controlled using Arduino Nano and communicates with Pixhawk via the PWM signal from the Pixhawk to determine the depth
+                of water intake. This system is designed to take water samples with a certain volume (220 ml per bottle) to ensure
+                accuracy and ease of operation in various water conditions.</p>
                 
-                
-           </div>
+                <span class="skills">Skills:</span>
+                <span>C++, PixHawk, Arduino</span>
+
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IPPhz6ka7jY" frameborder="0"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mm17HZyndQ0" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
         </main>
     </div>
 </body>

@@ -230,16 +230,24 @@ footer .cp {
     color: #333;
 }
 
+.usv {
+    padding: 20px;
+ 
+}
+
 .usv h1 {
     font-size: 30px;
     font-weight: bold;
-    margin: 20px;
+    margin: 20px 0;
 
 }
 
 .usv p {
     text-align: justify;
-    margin: 10px;
+    margin: 10px 0; 
+}
+.skills {
+    font-weight: bold;
 }
 
 .exp {
@@ -296,7 +304,7 @@ h1{
         display: block;
         font-size: 0.9em;
         color: #777;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .timeline-item p {
@@ -304,6 +312,31 @@ h1{
         font-size: 1em;
         color: #555;
     }
+}
+
+.image-container {
+    display: flex;
+    justify-content:space-around;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 20%;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+video-container iframe {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -320,4 +353,15 @@ h1{
     .container {
         flex-direction: column;
     }
+
+        
+        .video-container {
+            flex-direction: column;
+        }
+    
+    
+        .video-container iframe {
+            width: 100%;
+            margin: 10px 0;
+        }
 }
