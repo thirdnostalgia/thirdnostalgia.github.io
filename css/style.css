@@ -241,6 +241,9 @@ footer .cp {
     margin: 20px 0;
 
 }
+.contribution {
+    font-weight: bold;
+}
 
 .usv p {
     text-align: justify;
@@ -375,6 +378,14 @@ footer .cp {
     /* border: 1px solid #ddd; */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-snellie img{
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    width: 40%;
+   
 }
 
 .video-container {
