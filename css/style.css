@@ -253,6 +253,11 @@ footer .cp {
     font-weight: bold;
 }
 
+.usv ul li{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
 
 .education {
     padding: 20px;
@@ -385,7 +390,17 @@ footer .cp {
     justify-content: space-around;
     margin: 20px 0;
     width: 40%;
-   
+}
+
+.image-container-snellie1 img {
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 30%;
+    margin-left: 100px;
+    border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     
 }
 
 .video-container {
