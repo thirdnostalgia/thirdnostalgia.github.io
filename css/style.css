@@ -245,6 +245,12 @@ footer .cp {
     font-weight: bold;
 }
 
+.contribution a{
+    font-weight: bold;
+    color: #a11616;
+
+}
+
 .usv p {
     text-align: justify;
     margin: 10px 0; 
@@ -254,8 +260,9 @@ footer .cp {
 }
 
 .usv ul li{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 5px;
+    list-style: circle;
 }
 
 
@@ -361,16 +368,11 @@ footer .cp {
 .timeline-item ul li {
     margin-bottom: 10px;
     text-align: jus;
+    list-style:disc;
+    margin-left: 20px;
 }
 
-.timeline-item ul li:before {
-    content: '•';
-    color: #c2d6ec;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: 0;
-}
+
 
 .image-container {
     display: flex;
