@@ -137,10 +137,39 @@ footer .cp {
 
 .news-content {
     display: flex;
-
+    flex-direction: column;
 }
 
+.news-content ul {
+    list-style: none;
+    padding: 0;
+}
 
+.news-content li {
+    display: flex;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-content .date {
+    width: 100px;
+    background-color: rgba(244, 245, 248, 0.688);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.news-content .news-item {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    
+}
 
 .main-content .projects {
     width: 100%;
@@ -199,36 +228,7 @@ footer .cp {
         
 }
 
-.news-content .newskiri {
-    font-size: 1.2em;
-  
-    background-color: rgba(244, 245, 248, 0.688);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: justify   ;
-}
 
-.news-content .newskanan {
-    font-size: 1.2em;
-    padding: 10px;
-    border-radius: 5px;
-    
-
-}
-
-
-.news-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.news-content li {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #333;
-}
 
 .usv {
     padding: 20px;
@@ -269,7 +269,7 @@ footer .cp {
 .education {
     padding: 20px;
     background-color: #fff;
-
+    text-align: right;
     margin-bottom: 20px;
 }
 
@@ -278,6 +278,8 @@ footer .cp {
     font-weight: bold;
     color: #000000;
     margin-bottom: 20px;
+    text-align: right;
+    
 }
 
 .education-item {
@@ -304,6 +306,7 @@ footer .cp {
     font-size: 1.8em;
     margin-left: 15px;
     font-weight: bold;
+    text-align: left;
 }
 
 .timeline {
@@ -370,9 +373,9 @@ footer .cp {
     text-align: jus;
     list-style:disc;
     margin-left: 20px;
+    font-size: 1em;
+        color: #555;
 }
-
-
 
 .image-container {
     display: flex;
@@ -409,13 +412,36 @@ footer .cp {
     width: 60%;
     margin-left: 20%;
     border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container-HM img {
+    display: block;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .video-container {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+}
+
+.usv ul li {
+    list-style: disc;
+    margin: 10px 20px;
+}
+
+.usv ul li ul li{
+    list-style:circle;
+    
+}
+
+.tebal{
+    font-weight: bold;
 }
 
 video-container iframe {
