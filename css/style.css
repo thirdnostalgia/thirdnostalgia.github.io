@@ -181,8 +181,7 @@ footer .cp {
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 20px;
-    
+    grid-gap: 20px; 
 }
 
 .galeri a {
@@ -196,6 +195,20 @@ footer .cp {
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: transform 0.3s;
+}
+
+.galeri-s {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+
+.galeri-s img { 
+    width: 100%;
+    display: block;
 }
 
 
@@ -226,6 +239,16 @@ footer .cp {
             color: #333;
             padding: 10px;
         
+}
+
+.skills h1 {
+    text-align: left;
+    font-size: 2em;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+
 }
 
 
