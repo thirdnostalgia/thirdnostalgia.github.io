@@ -168,6 +168,9 @@ footer .cp {
     border-radius: 5px;
     margin-left: 10px;
     font-size: 1.2em;
+    color: #555;
+    line-height: 1.4;
+    text-align: left;
     
 }
 
@@ -277,9 +280,24 @@ footer .cp {
 .usv p {
     text-align: justify;
     margin: 10px 0; 
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.4;
+    text-align: justify;
 }
+
 .skills {
     font-weight: bold;
+    color: #555;
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.skills-s {  
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 1.2em;
 }
 
 .usv ul li{
@@ -364,6 +382,9 @@ footer .cp {
     padding: 15px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  
+    line-height: 1.1;
 }
 
 .timeline-item h3 {
