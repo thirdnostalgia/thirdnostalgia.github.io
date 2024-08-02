@@ -269,6 +269,10 @@ footer .cp {
 }
 .contribution {
     font-weight: bold;
+    color: #555;
+        line-height: 1.3;
+        text-align: justify;
+        font-size: 1.1em;
 }
 
 .contribution a{
@@ -287,14 +291,15 @@ footer .cp {
 }
 
 .skills {
-    font-weight: bold;
+    
     color: #555;
     line-height: 1.4;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .skills-s {  
+    
     line-height: 1.4;
     text-align: justify;
     font-size: 1.2em;
@@ -304,6 +309,15 @@ footer .cp {
     margin-left: 30px;
     margin-bottom: 5px;
     list-style: circle;
+}
+
+.helpmeow {
+    
+    color: #555;
+    line-height: 1.3;
+    text-align: justify;
+    font-size: 1.1em;
+       
 }
 
 
